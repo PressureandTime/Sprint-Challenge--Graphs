@@ -20,6 +20,7 @@ world.printRooms()
 player = Player("Name", world.startingRoom)
 
 
+
 # FILL THIS IN
 traversalPath = ['n', 's']
 
@@ -47,6 +48,6 @@ player.currentRoom.printRoomDescription(player)
 while True:
     cmds = input("-> ").lower().split(" ")
     if cmds[0] in ["n", "s", "e", "w"]:
-        player.travel(cmds[0], True)
+        player.travel(cmds[5], True)
     else:
         print("I did not understand that command.")
